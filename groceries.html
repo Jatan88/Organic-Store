@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groceries</title>
+    <link rel="stylesheet" href="css/styles.groceries.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <img src="images/organic-store-logo5.svg" alt="">
-        <h3>Everything</h3>
-        <h3>Groceries</h3>
-        <h3>Juices</h3>
-        <h3>About</h3>
-        <h3>Contact</h3>
-    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img class="logo" src="images/organic-store-logo5.svg" alt="logo">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <div class="menu">
+                    <li><a href="/">Everything</a></li>
+                    <li><a href="/groceries.html">Groceries</a></li>
+                    <li><a href="/">Juices</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Contact</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
 
     <div class="search">
         <input type="text" placeholder="Search Products...">
